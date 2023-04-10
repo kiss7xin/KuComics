@@ -7,17 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141A729E39E1C00E8BDFF /* KuTabView.swift */; };
+		A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */; };
+		A79141AE29E3A4F600E8BDFF /* BookShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AD29E3A4F600E8BDFF /* BookShelfView.swift */; };
+		A7B9B92729E3B53C001BA842 /* BookShelfTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B92629E3B53C001BA842 /* BookShelfTabView.swift */; };
+		A7B9B92929E3B5EA001BA842 /* BookShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B92829E3B5EA001BA842 /* BookShelfModel.swift */; };
+		A7B9B92D29E3E14F001BA842 /* BookshelfAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B92C29E3E14F001BA842 /* BookshelfAddView.swift */; };
+		A7B9B93229E3E803001BA842 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7B9B93429E3E803001BA842 /* Localizable.strings */; };
+		A7B9B93A29E409A2001BA842 /* KuNavigationBarBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B93929E409A2001BA842 /* KuNavigationBarBaseView.swift */; };
+		A7B9B93C29E40A9D001BA842 /* KuNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B93B29E40A9D001BA842 /* KuNavigationHelper.swift */; };
+		A7B9B93E29E42A5B001BA842 /* BookShelfTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B93D29E42A5B001BA842 /* BookShelfTypeCell.swift */; };
+		A7B9B94129E43106001BA842 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B94029E43106001BA842 /* AppSetting.swift */; };
+		A7B9B94329E4325F001BA842 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B94229E4325F001BA842 /* ViewExtensions.swift */; };
 		A7D57A7029DEAA1000A4ED58 /* KuComicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57A6F29DEAA1000A4ED58 /* KuComicsApp.swift */; };
 		A7D57A7229DEAA1000A4ED58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57A7129DEAA1000A4ED58 /* ContentView.swift */; };
 		A7D57A7429DEAA1300A4ED58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D57A7329DEAA1300A4ED58 /* Assets.xcassets */; };
 		A7D57A7729DEAA1300A4ED58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D57A7629DEAA1300A4ED58 /* Preview Assets.xcassets */; };
 		A7D57A8529DEE3A400A4ED58 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57A8429DEE3A400A4ED58 /* Color.swift */; };
 		A7D57AAA29DFC74400A4ED58 /* BookSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57AA929DFC74400A4ED58 /* BookSourceModel.swift */; };
-		A7D57AAF29E0095600A4ED58 /* BookSourceListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57AAE29E0095600A4ED58 /* BookSourceListPage.swift */; };
 		A7D57AB129E009AB00A4ED58 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57AB029E009AB00A4ED58 /* Image.swift */; };
+		E9F95D60D6D2D1D79933230C /* Pods_KuComics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.debug.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.debug.xcconfig"; sourceTree = "<group>"; };
+		610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.release.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.release.xcconfig"; sourceTree = "<group>"; };
+		A79141A729E39E1C00E8BDFF /* KuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuTabView.swift; sourceTree = "<group>"; };
+		A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuNavigationBar.swift; sourceTree = "<group>"; };
+		A79141AD29E3A4F600E8BDFF /* BookShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfView.swift; sourceTree = "<group>"; };
+		A7B9B92629E3B53C001BA842 /* BookShelfTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfTabView.swift; sourceTree = "<group>"; };
+		A7B9B92829E3B5EA001BA842 /* BookShelfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfModel.swift; sourceTree = "<group>"; };
+		A7B9B92C29E3E14F001BA842 /* BookshelfAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfAddView.swift; sourceTree = "<group>"; };
+		A7B9B92E29E3E70E001BA842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B9B93329E3E803001BA842 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A7B9B93529E3E867001BA842 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A7B9B93929E409A2001BA842 /* KuNavigationBarBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuNavigationBarBaseView.swift; sourceTree = "<group>"; };
+		A7B9B93B29E40A9D001BA842 /* KuNavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuNavigationHelper.swift; sourceTree = "<group>"; };
+		A7B9B93D29E42A5B001BA842 /* BookShelfTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfTypeCell.swift; sourceTree = "<group>"; };
+		A7B9B94029E43106001BA842 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		A7B9B94229E4325F001BA842 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		A7D57A6C29DEAA1000A4ED58 /* KuComics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuComics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D57A6F29DEAA1000A4ED58 /* KuComicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuComicsApp.swift; sourceTree = "<group>"; };
 		A7D57A7129DEAA1000A4ED58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,7 +54,6 @@
 		A7D57A7629DEAA1300A4ED58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7D57A8429DEE3A400A4ED58 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A7D57AA929DFC74400A4ED58 /* BookSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceModel.swift; sourceTree = "<group>"; };
-		A7D57AAE29E0095600A4ED58 /* BookSourceListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceListPage.swift; sourceTree = "<group>"; };
 		A7D57AB029E009AB00A4ED58 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,17 +62,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F95D60D6D2D1D79933230C /* Pods_KuComics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A79141A629E39ABE00E8BDFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A79141A929E39F6300E8BDFF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9B93629E4087C001BA842 /* KuNavigationBar */,
+				A7B9B94229E4325F001BA842 /* ViewExtensions.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		A79141AC29E3A47300E8BDFF /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				A79141AD29E3A4F600E8BDFF /* BookShelfView.swift */,
+				A7B9B92629E3B53C001BA842 /* BookShelfTabView.swift */,
+				A7B9B92C29E3E14F001BA842 /* BookshelfAddView.swift */,
+				A7B9B93D29E42A5B001BA842 /* BookShelfTypeCell.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		A7B9B92F29E3E758001BA842 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A7D57A7329DEAA1300A4ED58 /* Assets.xcassets */,
+				A7B9B92E29E3E70E001BA842 /* Info.plist */,
+				A7B9B93429E3E803001BA842 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A7B9B93629E4087C001BA842 /* KuNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */,
+				A7B9B93929E409A2001BA842 /* KuNavigationBarBaseView.swift */,
+				A7B9B93B29E40A9D001BA842 /* KuNavigationHelper.swift */,
+			);
+			path = KuNavigationBar;
+			sourceTree = "<group>";
+		};
+		A7B9B93F29E430F4001BA842 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9B94029E43106001BA842 /* AppSetting.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A7D57A6329DEAA1000A4ED58 = {
 			isa = PBXGroup;
 			children = (
 				A7D57A6E29DEAA1000A4ED58 /* KuComics */,
 				A7D57A6D29DEAA1000A4ED58 /* Products */,
+				CCC704BDA6DF090E6DE56C36 /* Pods */,
+				F40F710E2AA098F224CA33CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +145,15 @@
 		A7D57A6E29DEAA1000A4ED58 /* KuComics */ = {
 			isa = PBXGroup;
 			children = (
-				A7D57A8629DEEC8F00A4ED58 /* BookSource */,
-				A7D57A8329DEE39800A4ED58 /* Extension */,
+				A7B9B93F29E430F4001BA842 /* Util */,
 				A7D57A6F29DEAA1000A4ED58 /* KuComicsApp.swift */,
 				A7D57A7129DEAA1000A4ED58 /* ContentView.swift */,
+				A7B9B92F29E3E758001BA842 /* Resource */,
+				A7D57A8329DEE39800A4ED58 /* Extension */,
+				A79141A929E39F6300E8BDFF /* Component */,
+				A79141A629E39ABE00E8BDFF /* Service */,
+				A7D57A8629DEEC8F00A4ED58 /* Model */,
 				A7D57AAD29E0092C00A4ED58 /* Page */,
-				A7D57A7329DEAA1300A4ED58 /* Assets.xcassets */,
 				A7D57A7529DEAA1300A4ED58 /* Preview Content */,
 			);
 			path = KuComics;
@@ -87,20 +176,39 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		A7D57A8629DEEC8F00A4ED58 /* BookSource */ = {
+		A7D57A8629DEEC8F00A4ED58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A7D57AA929DFC74400A4ED58 /* BookSourceModel.swift */,
+				A7B9B92829E3B5EA001BA842 /* BookShelfModel.swift */,
 			);
-			path = BookSource;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A7D57AAD29E0092C00A4ED58 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				A7D57AAE29E0095600A4ED58 /* BookSourceListPage.swift */,
+				A79141AC29E3A47300E8BDFF /* Bookshelf */,
+				A79141A729E39E1C00E8BDFF /* KuTabView.swift */,
 			);
 			path = Page;
+			sourceTree = "<group>";
+		};
+		CCC704BDA6DF090E6DE56C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */,
+				802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F40F710E2AA098F224CA33CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7D57A7A29DEAA1300A4ED58 /* Build configuration list for PBXNativeTarget "KuComics" */;
 			buildPhases = (
+				D6312422716A2B67BA054E86 /* [CP] Check Pods Manifest.lock */,
 				A7D57A6829DEAA1000A4ED58 /* Sources */,
 				A7D57A6929DEAA1000A4ED58 /* Frameworks */,
 				A7D57A6A29DEAA1000A4ED58 /* Resources */,
@@ -140,11 +249,12 @@
 			};
 			buildConfigurationList = A7D57A6729DEAA1000A4ED58 /* Build configuration list for PBXProject "KuComics" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A7D57A6329DEAA1000A4ED58;
 			productRefGroup = A7D57A6D29DEAA1000A4ED58 /* Products */;
@@ -162,33 +272,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7D57A7729DEAA1300A4ED58 /* Preview Assets.xcassets in Resources */,
+				A7B9B93229E3E803001BA842 /* Localizable.strings in Resources */,
 				A7D57A7429DEAA1300A4ED58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D6312422716A2B67BA054E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KuComics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7D57A6829DEAA1000A4ED58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79141AE29E3A4F600E8BDFF /* BookShelfView.swift in Sources */,
 				A7D57A7229DEAA1000A4ED58 /* ContentView.swift in Sources */,
+				A7B9B93A29E409A2001BA842 /* KuNavigationBarBaseView.swift in Sources */,
+				A7B9B92929E3B5EA001BA842 /* BookShelfModel.swift in Sources */,
+				A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */,
+				A7B9B94129E43106001BA842 /* AppSetting.swift in Sources */,
 				A7D57AB129E009AB00A4ED58 /* Image.swift in Sources */,
-				A7D57AAF29E0095600A4ED58 /* BookSourceListPage.swift in Sources */,
 				A7D57A7029DEAA1000A4ED58 /* KuComicsApp.swift in Sources */,
+				A7B9B93C29E40A9D001BA842 /* KuNavigationHelper.swift in Sources */,
 				A7D57AAA29DFC74400A4ED58 /* BookSourceModel.swift in Sources */,
+				A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */,
+				A7B9B92729E3B53C001BA842 /* BookShelfTabView.swift in Sources */,
 				A7D57A8529DEE3A400A4ED58 /* Color.swift in Sources */,
+				A7B9B92D29E3E14F001BA842 /* BookshelfAddView.swift in Sources */,
+				A7B9B93E29E42A5B001BA842 /* BookShelfTypeCell.swift in Sources */,
+				A7B9B94329E4325F001BA842 /* ViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7B9B93429E3E803001BA842 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B9B93329E3E803001BA842 /* en */,
+				A7B9B93529E3E867001BA842 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A7D57A7829DEAA1300A4ED58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -249,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -301,6 +461,7 @@
 		};
 		A7D57A7B29DEAA1300A4ED58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KuComics/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuComics/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,6 +492,7 @@
 		};
 		A7D57A7C29DEAA1300A4ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +501,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KuComics/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuComics/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

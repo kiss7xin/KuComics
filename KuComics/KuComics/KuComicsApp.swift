@@ -12,6 +12,7 @@ struct KuComicsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppSetting())
         }
     }
 }

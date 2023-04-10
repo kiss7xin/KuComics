@@ -106,14 +106,4 @@ struct BookSourceItem: Identifiable {
     var weight = 0
     /// 是否启用:默认启用=true,手动启用=false (可选,默认true)
     var enable = true
-    
-    func test(data: [String: Any]) {
-        
-        let keys = "data.list.data.items".components(separatedBy: ".")
-        for key in keys {
-            
-        }
-        
-        
-    }
 }

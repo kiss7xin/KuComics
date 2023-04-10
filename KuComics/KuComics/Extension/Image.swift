@@ -15,4 +15,9 @@ public extension Image {
     static let pencil_slash = Image(systemName: "pencil.slash")
     static let arrow_up_line = Image(systemName: "arrow.up.to.line.compact")
     static let trash = Image(systemName: "trash")
+    static let search = Image(systemName: "magnifyingglass")
+    static let menu = Image(systemName: "line.3.horizontal")
+    static let plus = Image(systemName: "plus")
+    static let shelfEdit = Image(systemName: "square.and.pencil")
 }
+
