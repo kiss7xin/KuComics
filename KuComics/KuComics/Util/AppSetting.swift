@@ -26,4 +26,9 @@ class AppSetting: ObservableObject {
             }
         }
     }
+    
+    func loadDarkModeSetting() {
+        self.darkModeSettings = UserDefaults.standard.integer(forKey: "darkMode")
+    }
+    
 }

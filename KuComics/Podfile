@@ -6,5 +6,7 @@ target 'KuComics' do
   use_frameworks!
 
   # Pods for KuComics
-
+#  pod 'WCDB.swift'
+  pod 'Kingfisher'
+  pod 'Introspect'
 end

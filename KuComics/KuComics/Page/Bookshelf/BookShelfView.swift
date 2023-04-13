@@ -7,22 +7,19 @@
 
 import SwiftUI
 
+struct BookShelfView_Previews: PreviewProvider {
+    static var previews: some View {
+        BookShelfView(showDrawerView: .constant(false))
+    }
+}
+
 struct BookShelfView: View {
-    
-    @State var menus: [BookShelfItem] = [
-        BookShelfItem(name: "全部"),
-        BookShelfItem(name: "完结"),
-        BookShelfItem(name: "热血"),
-        BookShelfItem(name: "全部"),
-        BookShelfItem(name: "完结"),
-        BookShelfItem(name: "热血"),
-        BookShelfItem(name: "全部"),
-        BookShelfItem(name: "完结"),
-        BookShelfItem(name: "热血"),
-        BookShelfItem(name: "全部"),
-        BookShelfItem(name: "完结"),
-        BookShelfItem(name: "热血")
-    ]
+    @Binding var showDrawerView:Bool
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \BookShelf.timestamp, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<BookShelf>
     
     var body: some View {
         KuNavigationBar {
@@ -31,11 +28,11 @@ struct BookShelfView: View {
                 HStack {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 20) {
-                            ForEach(menus) {item in
+                            ForEach(items) {item in
                                 Button{
                                     
                                 } label: {
-                                    Text(item.name)
+                                    Text(item.name ?? "")
                                 }
                             }
                         }
@@ -81,7 +78,9 @@ struct BookShelfView: View {
         }
         .KuNavigationBarItems {
             Button {
-                
+                withAnimation {
+                    showDrawerView = true
+                }
             } label: {
                 Image.menu
                     .foregroundColor(.white)
@@ -96,11 +95,5 @@ struct BookShelfView: View {
                     .font(.system(size: 16))
             }
         }
-    }
-}
-
-struct BookShelfView_Previews: PreviewProvider {
-    static var previews: some View {
-        BookShelfView()
     }
 }
