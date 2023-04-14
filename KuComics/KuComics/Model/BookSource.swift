@@ -6,17 +6,16 @@
 //
 
 import Foundation
+import KakaJSON
 
-enum BookSourceType: Int {
+enum BookSourceType: Int, ConvertibleEnum {
     case cartoon
     case wallpaper
     case video
 }
 
 /// 图源信息
-struct BookSourceItem: Identifiable {
-    var id = UUID()
-    
+struct BookSource: Convertible {
     /// 图源基础信息
     /// 图源名称
     var bookSourceName = ""

@@ -1,5 +1,5 @@
 //
-//  BookShelfView.swift
+//  BookShelfPage.swift
 //  KuComics
 //
 //  Created by weixin on 2023/4/10.
@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct BookShelfView_Previews: PreviewProvider {
+struct BookShelfPage_Previews: PreviewProvider {
     static var previews: some View {
-        BookShelfView(showDrawerView: .constant(false))
+        BookShelfPage(isShowDrawer: .constant(false))
     }
 }
 
-struct BookShelfView: View {
-    @Binding var showDrawerView:Bool
+struct BookShelfPage: View {
+    @Binding var isShowDrawer: Bool
+    
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \BookShelf.timestamp, ascending: true)],
@@ -79,7 +80,7 @@ struct BookShelfView: View {
         .KuNavigationBarItems {
             Button {
                 withAnimation {
-                    showDrawerView = true
+                    self.isShowDrawer = true
                 }
             } label: {
                 Image.menu

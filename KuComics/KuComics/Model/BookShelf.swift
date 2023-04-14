@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum BookShelfViewStyle: Int {
+enum BookShelfPageStyle: Int {
     case list
     case grid
 }
@@ -21,7 +21,7 @@ enum BookShelfSort: Int {
 struct BookShelfItem: Identifiable {
     var id = UUID()
     var name: String = ""
-    var viewStyle: BookShelfViewStyle = .list
+    var viewStyle: BookShelfPageStyle = .list
     var sort: BookShelfSort = .time
     var couldDelete: Bool = true
     var bookList: [String] = []

@@ -8,6 +8,9 @@
 import SwiftUI
 
 class AppSetting: ObservableObject {
+    
+    @Published var showDrawerView: Bool = false
+    
     @Published var darkModeSettings: Int = UserDefaults.standard.integer(forKey: "darkMode") {
         didSet {
             UserDefaults.standard.set(self.darkModeSettings, forKey: "darkMode")
@@ -30,5 +33,4 @@ class AppSetting: ObservableObject {
     func loadDarkModeSetting() {
         self.darkModeSettings = UserDefaults.standard.integer(forKey: "darkMode")
     }
-    
 }

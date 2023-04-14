@@ -1,5 +1,5 @@
 //
-//  BookSourceView.swift
+//  BookSourcePage.swift
 //  KuComics
 //
 //  Created by weixin on 2023/4/11.
@@ -7,18 +7,20 @@
 
 import SwiftUI
 
-struct BookSourceView_Previews: PreviewProvider {
+struct BookSourcePage_Previews: PreviewProvider {
     static var previews: some View {
-        BookSourceView()
+        BookSourcePage()
     }
 }
 
-struct BookSourceView: View {
+struct BookSourcePage: View {
     @State var searchText = ""
     @State private var showMore = false
     
     @State private var isAddUrlShow = false
     @State private var isDeleteSourceShow = false
+    
+    @ObservedObject var viewModel = BookSourceViewModel()
     
     var body: some View {
         ZStack {
@@ -28,18 +30,7 @@ struct BookSourceView: View {
                         BookSourceCell()
                     }
                     .listStyle(.plain)
-                    
-                    
-                    MaskView(bgColor: .black)
-                        .onTapGesture {
-                            withAnimation {
-                                showMore = false
-                            }
-                        }.opacity(showMore ? 1:0)
-                    
-                    moreFunctionView.opacity(showMore ? 1:0)
                 }
-                .animation(.spring())
             }
             .maxWidth(leading: 320 , trailing: 100)
             .background(GradientBackgroundView())
@@ -67,7 +58,9 @@ struct BookSourceView: View {
                             .foregroundColor(Color.text)
                     }
                     Button {
-                        more()
+                        withAnimation {
+                            showMore = true
+                        }
                     } label: {
                         Image.ellipsis
                             .font(.system(size: 16))
@@ -77,6 +70,15 @@ struct BookSourceView: View {
             }
             
             Group {
+                MaskView(bgColor: .black)
+                    .onTapGesture {
+                        withAnimation {
+                            showMore = false
+                        }
+                    }.opacity(showMore ? 1:0)
+
+                moreFunctionView.opacity(showMore ? 1:0)
+                
                 addUrlMaskView.opacity(isAddUrlShow ? 1 : 0)
                 deleteSourceMaskView.opacity(isDeleteSourceShow ? 1 : 0)
             }
@@ -86,12 +88,6 @@ struct BookSourceView: View {
     
     private func selectAll() {
         
-    }
-    
-    private func more() {
-        withAnimation {
-            showMore = true
-        }
     }
     
     // 搜索框
@@ -115,7 +111,7 @@ struct BookSourceView: View {
                     // push
                 }
                 Button("本地导入") {
-                    // 弹窗
+                    showMore = false
                     
                 }
                 Button("网络导入") {
@@ -143,6 +139,7 @@ struct BookSourceView: View {
             }
             .listStyle(.plain)
             .font(.system(size: 14))
+            .padding(.top, 44)
             .frame(width: UIScreen.main.bounds.width / 2)
         }
     }

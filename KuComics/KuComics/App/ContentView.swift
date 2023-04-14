@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct ContentView: View {
     
     @EnvironmentObject var appSetting: AppSetting
