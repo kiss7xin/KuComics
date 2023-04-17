@@ -10,6 +10,9 @@
 		A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB2F29E57CE700A818B8 /* MaskView.swift */; };
 		A74DFB3229E581E000A818B8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3129E581E000A818B8 /* Screen.swift */; };
 		A74DFB3629E6CC8D00A818B8 /* KuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */; };
+		A7671C4129ECF8CC005BD3B4 /* BookShelfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4029ECF8CC005BD3B4 /* BookShelfViewModel.swift */; };
+		A7671C4329ED247E005BD3B4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4229ED247E005BD3B4 /* APIClient.swift */; };
+		A7671C4529ED3F8D005BD3B4 /* BookSourceEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */; };
 		A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141A729E39E1C00E8BDFF /* KuTabView.swift */; };
 		A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */; };
 		A79141AE29E3A4F600E8BDFF /* BookShelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AD29E3A4F600E8BDFF /* BookShelfPage.swift */; };
@@ -53,6 +56,9 @@
 		A74DFB2F29E57CE700A818B8 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		A74DFB3129E581E000A818B8 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuAlertView.swift; sourceTree = "<group>"; };
+		A7671C4029ECF8CC005BD3B4 /* BookShelfViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfViewModel.swift; sourceTree = "<group>"; };
+		A7671C4229ED247E005BD3B4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceEditPage.swift; sourceTree = "<group>"; };
 		A79141A729E39E1C00E8BDFF /* KuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuTabView.swift; sourceTree = "<group>"; };
 		A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuNavigationBar.swift; sourceTree = "<group>"; };
 		A79141AD29E3A4F600E8BDFF /* BookShelfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfPage.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 				A7B9B93D29E42A5B001BA842 /* BookShelfTypeCell.swift */,
 				A7D30C0729E4F4C100EED474 /* BookShelfService.swift */,
 				A7D30C4229E53C7800EED474 /* BookShelfCell.swift */,
+				A7671C4029ECF8CC005BD3B4 /* BookShelfViewModel.swift */,
 			);
 			path = Bookshelf;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 				A74DFB3129E581E000A818B8 /* Screen.swift */,
 				A79C7B5429E902DA00AEEE7E /* LazyView.swift */,
 				A79C7B6229E93DDB00AEEE7E /* KuNetwork.swift */,
+				A7671C4229ED247E005BD3B4 /* APIClient.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 				A7D30C4529E5449100EED474 /* BookSourcePage.swift */,
 				A7D30C4729E5533500EED474 /* BookSourceService.swift */,
 				A7C718BE29E8226200DFC021 /* BookSourceViewModel.swift */,
+				A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */,
 			);
 			path = BookSource;
 			sourceTree = "<group>";
@@ -426,6 +435,9 @@
 				A79C7B6029E92B4200AEEE7E /* RecommendPage.swift in Sources */,
 				A7B9B92929E3B5EA001BA842 /* BookShelf.swift in Sources */,
 				A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */,
+				A7671C4329ED247E005BD3B4 /* APIClient.swift in Sources */,
+				A7671C4129ECF8CC005BD3B4 /* BookShelfViewModel.swift in Sources */,
+				A7671C4529ED3F8D005BD3B4 /* BookSourceEditPage.swift in Sources */,
 				A7D30C4629E5449100EED474 /* BookSourcePage.swift in Sources */,
 				A7B9B94129E43106001BA842 /* AppSetting.swift in Sources */,
 				A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */,

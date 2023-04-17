@@ -15,7 +15,8 @@ enum BookSourceType: Int, ConvertibleEnum {
 }
 
 /// 图源信息
-struct BookSource: Convertible {
+struct BookSource: Convertible, Identifiable, Equatable {
+    var id = UUID()
     /// 图源基础信息
     /// 图源名称
     var bookSourceName = ""
@@ -105,4 +106,13 @@ struct BookSource: Convertible {
     var weight = 0
     /// 是否启用:默认启用=true,手动启用=false (可选,默认true)
     var enable = true
+    
+    
+    // 判断相等
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        if lhs.bookSourceUrl == rhs.bookSourceUrl, lhs.ruleSearchUrl == rhs.ruleSearchUrl {
+            return true
+        }
+        return false
+    }
 }

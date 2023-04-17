@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 import KakaJSON
 
 enum FetchStatus {
@@ -27,32 +26,41 @@ enum ServiceError: Error {
 class KuNet {
     
     public static func request(_ url: String, method : MethodType = .get, parameters: [String : Any]?, callback: @escaping (Any) -> ()) {
-        AlamofireLayer.requestData(method, URLString: url, parameters: parameters) { result in
+        BaseNet.request(method, URLString: url, parameters: parameters) { result in
             callback(result)
         }
     }
         
     public static func postRequest(_ URLString: String, parameters: [String : Any]?, callback: @escaping (Any) -> ()) {
-        AlamofireLayer.requestData(MethodType.post, URLString: URLString, parameters: parameters) { result in
+        BaseNet.request(MethodType.post, URLString: URLString, parameters: parameters) { result in
             callback(result)
         }
     }
+    
+    
 }
 
-class AlamofireLayer {
-    class func requestData(_ type: MethodType, URLString : String, parameters : [String : Any]? = nil, callback :  @escaping (_ result : Any) -> ()) {
+class BaseNet {
+    
+    class func request(_ type: MethodType, URLString : String, parameters : [String : Any]? = nil, callback :  @escaping (_ result : Any) -> ()) {
         
-        let method = type == .get ? HTTPMethod.get : HTTPMethod.post
-        
-        AF.request(URLString, method: method, parameters: parameters).responseJSON { (response) in
-            switch response.result {
-            case .success(let json):
-                callback(json)
-                break
-            case .failure(let error):
-                print("error:\(error)")
-                break
-            }
+        let url = URL(string: URLString)!
+        let session = URLSession.shared
+        var request = URLRequest(url: url)
+        if type == .get {
+            request.httpMethod = "GET"
+        } else {
+            request.httpMethod = "POST"
         }
+        request.addValue("text/plain",forHTTPHeaderField: "Accept")
+        session.dataTask(with: request as URLRequest) { data, response, error in
+            if let data = data,
+            let httpResponse = response as? HTTPURLResponse, (200..<300) ~= httpResponse.statusCode,
+            let strData = String(bytes: data, encoding: .utf8) {
+                callback(strData)
+            }
+        }.resume()
     }
+    
+    
 }

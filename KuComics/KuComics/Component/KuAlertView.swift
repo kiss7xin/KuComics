@@ -67,6 +67,7 @@ public struct KuAlertView<Content>: View where Content: View {
     }
     
     private func confirm() {
+        self.confirmAction()
         self.isShow.wrappedValue = false
     }
     

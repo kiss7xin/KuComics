@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 public extension Color {
-    static let background = Color("backgound")
+    static let background = Color("background")
     static let foreground = Color("foreground")
     static let navbarbackgroundleft = Color("navbarbackgroundleft")
     static let navbarbackgroundright = Color("navbarbackgroundright")

@@ -20,16 +20,23 @@ struct BookSourcePage: View {
     @State private var isAddUrlShow = false
     @State private var isDeleteSourceShow = false
     
-    @ObservedObject var viewModel = BookSourceViewModel()
+    @ObservedObject var vm = BookSourceViewModel()
     
     var body: some View {
         ZStack {
             KuNavigationBar {
-                ZStack {
-                    List {
-                        BookSourceCell()
+                List {
+                    ForEach(vm.bookSources) { source in
+                        BookSourceCell(source: source) {
+                            withAnimation(.spring()) {
+                                vm.toppingBookSource(source: source)
+                            }
+                        } deleteAction: {
+                            withAnimation(.spring()) {
+                                vm.deleteBookSource(source: source)
+                            }
+                        }
                     }
-                    .listStyle(.plain)
                 }
             }
             .maxWidth(leading: 320 , trailing: 100)
@@ -157,7 +164,10 @@ struct BookSourcePage: View {
             }
         }
         .confirm {
-            
+            Task {
+                await vm.fetchData(url: "http://127.0.0.1/sourceList.json")
+            }
+
         }
     }
     
@@ -179,30 +189,43 @@ struct BookSourcePage: View {
 }
 
 struct BookSourceCell: View {
+    @State private var isLinkActive: Bool = false
+    var source: BookSource
+    var toppingAction: () -> Void
+    var deleteAction: () -> Void
     
     var body: some View {
-        HStack {
-            Button{} label: {
-                Image.checkmark
-                    .foregroundColor(.gray)
+        ZStack{
+//            NavigationLink(isActive: $isLinkActive, destination: {BookSourceEditPage(bookSource: source)}, label: {})
+            HStack {
+                Button{} label: {
+                    Image.checkmark
+                        .foregroundColor(.gray)
+                }
+                Text(source.bookSourceName)
+                Spacer()
+                
+                HStack(spacing: 16) {
+                    Button{
+                        isLinkActive = true
+                    } label: {
+                        Image.shelfEdit
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                    Button{toppingAction()} label: {
+                        Image.arrow_up_line
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                    Button{deleteAction()} label: {
+                        Image.trash
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                }
+                .foregroundColor(.blue)
             }
-            Text("多多漫画")
-            Spacer()
+            .font(.system(.body))
+            .frame(height: 50)
             
-            HStack(spacing: 16) {
-                Button{} label: {
-                    Image.shelfEdit
-                }
-                Button{} label: {
-                    Image.arrow_up_line
-                }
-                Button{} label: {
-                    Image.trash
-                }
-            }
-            .foregroundColor(.blue)
         }
-        .font(.system(.body))
-        .frame(height: 50)
     }
 }

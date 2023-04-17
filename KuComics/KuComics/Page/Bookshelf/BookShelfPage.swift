@@ -22,6 +22,8 @@ struct BookShelfPage: View {
         animation: .default)
     private var items: FetchedResults<BookShelf>
     
+    var vm = BookShelfViewModel()
+    
     var body: some View {
         KuNavigationBar {
             VStack(spacing: 0) {
@@ -89,7 +91,7 @@ struct BookShelfPage: View {
             }
         } trailing: {
             Button {
-                
+                vm.getSourceList()
             } label: {
                 Image.plus
                     .foregroundColor(.white)

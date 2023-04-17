@@ -11,15 +11,16 @@ import KakaJSON
 class BookSourceService {
     
     static func fetchBookSourceData(url: String) async throws -> [BookSource] {
-        
-        return try await withCheckedThrowingContinuation({ continuation in
+        return try await withCheckedThrowingContinuation { continuation in
             KuNet.request(url, parameters: nil) { response in
-                guard let data = response as? [Any] else {
-                    return continuation.resume(throwing: ServiceError.jsonDecodeFailure)
+                if let data = response as? String {
+                    let sources = data.kj.modelArray(BookSource.self)
+                    print("sources:\(sources)")
+                    continuation.resume(with: Result.success(sources))
+                } else {
+                    continuation.resume(throwing: ServiceError.jsonDecodeFailure)
                 }
-                let sourceList = data.kj.modelArray(BookSource.self)
-                continuation.resume(with: Result.success(sourceList))
             }
-        })
+        }
     }
 }
