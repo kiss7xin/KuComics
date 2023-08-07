@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A727A72E2A80EA5E00108D60 /* RESTFulAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */; };
 		A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB2F29E57CE700A818B8 /* MaskView.swift */; };
 		A74DFB3229E581E000A818B8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3129E581E000A818B8 /* Screen.swift */; };
 		A74DFB3629E6CC8D00A818B8 /* KuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */; };
@@ -32,6 +33,7 @@
 		A7B9B94129E43106001BA842 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B94029E43106001BA842 /* AppSetting.swift */; };
 		A7B9B94329E4325F001BA842 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9B94229E4325F001BA842 /* ViewExtensions.swift */; };
 		A7C718BF29E8226200DFC021 /* BookSourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C718BE29E8226200DFC021 /* BookSourceViewModel.swift */; };
+		A7D02BA929FA10E300D2EAD5 /* SudosuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D02BA829FA10E300D2EAD5 /* SudosuView.swift */; };
 		A7D30C0829E4F4C100EED474 /* BookShelfService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D30C0729E4F4C100EED474 /* BookShelfService.swift */; };
 		A7D30C0A29E4F62000EED474 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D30C0929E4F62000EED474 /* Book.swift */; };
 		A7D30C0F29E4FEAA00EED474 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D30C0E29E4FEAA00EED474 /* Persistence.swift */; };
@@ -53,6 +55,7 @@
 		2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.debug.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.debug.xcconfig"; sourceTree = "<group>"; };
 		610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.release.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.release.xcconfig"; sourceTree = "<group>"; };
+		A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTFulAPI.swift; sourceTree = "<group>"; };
 		A74DFB2F29E57CE700A818B8 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		A74DFB3129E581E000A818B8 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuAlertView.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		A7B9B94029E43106001BA842 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		A7B9B94229E4325F001BA842 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		A7C718BE29E8226200DFC021 /* BookSourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceViewModel.swift; sourceTree = "<group>"; };
+		A7D02BA829FA10E300D2EAD5 /* SudosuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudosuView.swift; sourceTree = "<group>"; };
 		A7D30C0729E4F4C100EED474 /* BookShelfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfService.swift; sourceTree = "<group>"; };
 		A7D30C0929E4F62000EED474 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A7D30C0E29E4FEAA00EED474 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -109,6 +113,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A727A72C2A80E91800108D60 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A727A72F2A80EBA900108D60 /* HttpRequest */,
+				A727A7302A80EBB800108D60 /* HttpResponse */,
+				A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A727A72F2A80EBA900108D60 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		A727A7302A80EBB800108D60 /* HttpResponse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpResponse;
+			sourceTree = "<group>";
+		};
 		A79141A629E39ABE00E8BDFF /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +280,7 @@
 		A7D57A6E29DEAA1000A4ED58 /* KuComics */ = {
 			isa = PBXGroup;
 			children = (
+				A727A72C2A80E91800108D60 /* Network */,
 				A7D30C0629E4F06200EED474 /* App */,
 				A7B9B93F29E430F4001BA842 /* Util */,
 				A7B9B92F29E3E758001BA842 /* Resource */,
@@ -290,6 +319,7 @@
 				A79C7B5129E8FE9100AEEE7E /* TabView */,
 				A7D30C4429E5447A00EED474 /* BookSource */,
 				A79141AC29E3A47300E8BDFF /* Bookshelf */,
+				A7D02BA829FA10E300D2EAD5 /* SudosuView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -433,11 +463,13 @@
 				A7B9B93A29E409A2001BA842 /* KuNavigationBarBaseView.swift in Sources */,
 				A7D30C0829E4F4C100EED474 /* BookShelfService.swift in Sources */,
 				A79C7B6029E92B4200AEEE7E /* RecommendPage.swift in Sources */,
+				A727A72E2A80EA5E00108D60 /* RESTFulAPI.swift in Sources */,
 				A7B9B92929E3B5EA001BA842 /* BookShelf.swift in Sources */,
 				A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */,
 				A7671C4329ED247E005BD3B4 /* APIClient.swift in Sources */,
 				A7671C4129ECF8CC005BD3B4 /* BookShelfViewModel.swift in Sources */,
 				A7671C4529ED3F8D005BD3B4 /* BookSourceEditPage.swift in Sources */,
+				A7D02BA929FA10E300D2EAD5 /* SudosuView.swift in Sources */,
 				A7D30C4629E5449100EED474 /* BookSourcePage.swift in Sources */,
 				A7B9B94129E43106001BA842 /* AppSetting.swift in Sources */,
 				A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */,
@@ -532,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -587,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -614,7 +646,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,7 +677,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

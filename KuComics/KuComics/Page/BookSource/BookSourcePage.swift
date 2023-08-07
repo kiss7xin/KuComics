@@ -196,7 +196,7 @@ struct BookSourceCell: View {
     
     var body: some View {
         ZStack{
-//            NavigationLink(isActive: $isLinkActive, destination: {BookSourceEditPage(bookSource: source)}, label: {})
+            NavigationLink(isActive: $isLinkActive, destination: {BookSourceEditPage(bookSource: source)}, label: {})
             HStack {
                 Button{} label: {
                     Image.checkmark

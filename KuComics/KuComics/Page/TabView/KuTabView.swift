@@ -53,6 +53,5 @@ struct KuTabView: View {
     func createTabItem(_ item: TabItemInfo) -> some View {
         Label(item.title, systemImage: item.imageName)
     }
-    
 }
 
