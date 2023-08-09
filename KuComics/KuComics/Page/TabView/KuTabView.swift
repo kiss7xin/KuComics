@@ -26,7 +26,8 @@ struct KuTabView: View {
     private let tabItems = [
         TabItemInfo(title: "书架",imageName: "books.vertical"),
         TabItemInfo(title: "推荐",imageName: "crown"),
-        TabItemInfo(title: "历史",imageName: "clock")
+        TabItemInfo(title: "历史",imageName: "clock"),
+        TabItemInfo(title: "列表",imageName: "clock")
     ]
     
     var body: some View {
@@ -41,6 +42,9 @@ struct KuTabView: View {
                 HistoryPage(isShowDrawer: $isShowDrawer).tabItem {
                     createTabItem(tabItems[2])
                   }.tag(2)
+                RepListPage(isShowDrawer: $isShowDrawer).tabItem {
+                    createTabItem(tabItems[3])
+                }.tag(3)
             }
             .background(Color.background)
             .accentColor(Color.foreground)

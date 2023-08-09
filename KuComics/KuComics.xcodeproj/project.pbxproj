@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A727A72E2A80EA5E00108D60 /* RESTFulAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */; };
+		A727A7332A83460300108D60 /* GithubSearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A7322A83460300108D60 /* GithubSearchPage.swift */; };
+		A727A7352A83648C00108D60 /* RepListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A7342A83648C00108D60 /* RepListPage.swift */; };
 		A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB2F29E57CE700A818B8 /* MaskView.swift */; };
 		A74DFB3229E581E000A818B8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3129E581E000A818B8 /* Screen.swift */; };
 		A74DFB3629E6CC8D00A818B8 /* KuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */; };
@@ -56,6 +58,8 @@
 		610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.release.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.release.xcconfig"; sourceTree = "<group>"; };
 		A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTFulAPI.swift; sourceTree = "<group>"; };
+		A727A7322A83460300108D60 /* GithubSearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchPage.swift; sourceTree = "<group>"; };
+		A727A7342A83648C00108D60 /* RepListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepListPage.swift; sourceTree = "<group>"; };
 		A74DFB2F29E57CE700A818B8 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		A74DFB3129E581E000A818B8 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuAlertView.swift; sourceTree = "<group>"; };
@@ -137,9 +141,19 @@
 			path = HttpResponse;
 			sourceTree = "<group>";
 		};
+		A727A7312A8345EB00108D60 /* GithubSearch */ = {
+			isa = PBXGroup;
+			children = (
+				A727A7322A83460300108D60 /* GithubSearchPage.swift */,
+				A727A7342A83648C00108D60 /* RepListPage.swift */,
+			);
+			path = GithubSearch;
+			sourceTree = "<group>";
+		};
 		A79141A629E39ABE00E8BDFF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A7D30C4729E5533500EED474 /* BookSourceService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -252,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				A7D30C4529E5449100EED474 /* BookSourcePage.swift */,
-				A7D30C4729E5533500EED474 /* BookSourceService.swift */,
 				A7C718BE29E8226200DFC021 /* BookSourceViewModel.swift */,
 				A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */,
 			);
@@ -313,6 +326,7 @@
 		A7D57AAD29E0092C00A4ED58 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				A727A7312A8345EB00108D60 /* GithubSearch */,
 				A79C7B5E29E92B3300AEEE7E /* Recommend */,
 				A79C7B5929E922D600AEEE7E /* Drawer */,
 				A79C7B5629E920C900AEEE7E /* History */,
@@ -466,6 +480,7 @@
 				A727A72E2A80EA5E00108D60 /* RESTFulAPI.swift in Sources */,
 				A7B9B92929E3B5EA001BA842 /* BookShelf.swift in Sources */,
 				A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */,
+				A727A7332A83460300108D60 /* GithubSearchPage.swift in Sources */,
 				A7671C4329ED247E005BD3B4 /* APIClient.swift in Sources */,
 				A7671C4129ECF8CC005BD3B4 /* BookShelfViewModel.swift in Sources */,
 				A7671C4529ED3F8D005BD3B4 /* BookSourceEditPage.swift in Sources */,
@@ -484,6 +499,7 @@
 				A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */,
 				A7D30C0A29E4F62000EED474 /* Book.swift in Sources */,
 				A7B9B92729E3B53C001BA842 /* BookShelfTabView.swift in Sources */,
+				A727A7352A83648C00108D60 /* RepListPage.swift in Sources */,
 				A79C7B5D29E9244200AEEE7E /* DrawerCell.swift in Sources */,
 				A79C7B5529E902DA00AEEE7E /* LazyView.swift in Sources */,
 				A7D30C4829E5533500EED474 /* BookSourceService.swift in Sources */,

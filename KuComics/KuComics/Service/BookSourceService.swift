@@ -11,6 +11,9 @@ import KakaJSON
 class BookSourceService {
     
     static func fetchBookSourceData(url: String) async throws -> [BookSource] {
+        
+//        let API = RESTful(host: .github)
+        
         try await withCheckedThrowingContinuation { continuation in
             KuNet.request(url, parameters: nil) { response in
                 if let data = response as? String {

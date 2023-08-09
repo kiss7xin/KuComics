@@ -15,6 +15,7 @@ struct RecommendPage: View {
     }
 }
 
+
 struct RecommendPage_Previews: PreviewProvider {
     static var previews: some View {
         RecommendPage(isShowDrawer: .constant(false))

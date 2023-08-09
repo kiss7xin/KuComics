@@ -25,24 +25,30 @@ enum ServiceError: Error {
 
 class KuNet {
     
-    public static func request(_ url: String, method : MethodType = .get, parameters: [String : Any]?, callback: @escaping (Any) -> ()) {
+    public static func request(_ url: String,
+                               method : MethodType = .get,
+                               parameters: [String : Any]?,
+                               callback: @escaping (Any) -> ()) {
         BaseNet.request(method, URLString: url, parameters: parameters) { result in
             callback(result)
         }
     }
         
-    public static func postRequest(_ URLString: String, parameters: [String : Any]?, callback: @escaping (Any) -> ()) {
+    public static func postRequest(_ URLString: String,
+                                   parameters: [String : Any]?,
+                                   callback: @escaping (Any) -> ()) {
         BaseNet.request(MethodType.post, URLString: URLString, parameters: parameters) { result in
             callback(result)
         }
     }
-    
-    
 }
 
 class BaseNet {
     
-    class func request(_ type: MethodType, URLString : String, parameters : [String : Any]? = nil, callback :  @escaping (_ result : Any) -> ()) {
+    class func request(_ type: MethodType,
+                       URLString: String,
+                       parameters: [String : Any]? = nil,
+                       callback :  @escaping (_ result : Any) -> ()) {
         
         let url = URL(string: URLString)!
         let session = URLSession.shared
