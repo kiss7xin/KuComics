@@ -1,12 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '13.0'
 
 target 'KuComics' do
-  
   use_frameworks!
   
   pod 'Kingfisher'
   pod 'Introspect'
   pod 'KakaJSON', '1.1.2'
+  pod 'SnapKit', '5.7.1'
 end
 
 post_install do |installer|
@@ -16,3 +18,14 @@ post_install do |installer|
     end
   end
 end
+
+target 'KuComicsActivityExtension' do
+  use_frameworks!
+  
+  pod 'KingfisherWebP', '~> 1.5.2'
+  # Json解析
+  pod 'KakaJSON', '~> 1.1.2'
+  # 网络库
+  pod 'Moya', '~> 15.0.0'
+end
+

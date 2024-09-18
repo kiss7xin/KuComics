@@ -10,12 +10,28 @@
 		A727A72E2A80EA5E00108D60 /* RESTFulAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */; };
 		A727A7332A83460300108D60 /* GithubSearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A7322A83460300108D60 /* GithubSearchPage.swift */; };
 		A727A7352A83648C00108D60 /* RepListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727A7342A83648C00108D60 /* RepListPage.swift */; };
+		A73B4C4D2BAA900F0015AB1A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A73B4C4C2BAA900F0015AB1A /* PrivacyInfo.xcprivacy */; };
+		A73B4C4E2BAA900F0015AB1A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A73B4C4C2BAA900F0015AB1A /* PrivacyInfo.xcprivacy */; };
 		A74DFB3029E57CE700A818B8 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB2F29E57CE700A818B8 /* MaskView.swift */; };
 		A74DFB3229E581E000A818B8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3129E581E000A818B8 /* Screen.swift */; };
 		A74DFB3629E6CC8D00A818B8 /* KuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */; };
 		A7671C4129ECF8CC005BD3B4 /* BookShelfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4029ECF8CC005BD3B4 /* BookShelfViewModel.swift */; };
 		A7671C4329ED247E005BD3B4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4229ED247E005BD3B4 /* APIClient.swift */; };
 		A7671C4529ED3F8D005BD3B4 /* BookSourceEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */; };
+		A77F67FE2BA7E2A800BB8AED /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C680CE2B0F238D00547695 /* WidgetKit.framework */; };
+		A77F67FF2BA7E2A800BB8AED /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C680D02B0F238D00547695 /* SwiftUI.framework */; };
+		A77F68022BA7E2A800BB8AED /* KuComicsActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68012BA7E2A800BB8AED /* KuComicsActivityBundle.swift */; };
+		A77F68042BA7E2A800BB8AED /* KuComicsActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68032BA7E2A800BB8AED /* KuComicsActivity.swift */; };
+		A77F68062BA7E2AA00BB8AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77F68052BA7E2AA00BB8AED /* Assets.xcassets */; };
+		A77F680A2BA7E2AA00BB8AED /* KuComicsActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A77F67FD2BA7E2A800BB8AED /* KuComicsActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A77F681D2BA7E36F00BB8AED /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F681C2BA7E36F00BB8AED /* WidgetExtension.swift */; };
+		A77F68262BA7E49000BB8AED /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F681E2BA7E49000BB8AED /* ProductDetail.swift */; };
+		A77F68272BA7E49000BB8AED /* CustomMultiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68202BA7E49000BB8AED /* CustomMultiTarget.swift */; };
+		A77F68282BA7E49000BB8AED /* KangBossAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68212BA7E49000BB8AED /* KangBossAPI.swift */; };
+		A77F68292BA7E49000BB8AED /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68222BA7E49000BB8AED /* NetWork.swift */; };
+		A77F682A2BA7E49000BB8AED /* NetWorkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68232BA7E49000BB8AED /* NetWorkError.swift */; };
+		A77F682B2BA7E49000BB8AED /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F68242BA7E49000BB8AED /* RequestParameters.swift */; };
+		A77F682E2BA7ED6200BB8AED /* DataSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F682D2BA7ED6200BB8AED /* DataSave.swift */; };
 		A79141A829E39E1C00E8BDFF /* KuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141A729E39E1C00E8BDFF /* KuTabView.swift */; };
 		A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */; };
 		A79141AE29E3A4F600E8BDFF /* BookShelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79141AD29E3A4F600E8BDFF /* BookShelfPage.swift */; };
@@ -50,22 +66,64 @@
 		A7D57A8529DEE3A400A4ED58 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57A8429DEE3A400A4ED58 /* Color.swift */; };
 		A7D57AAA29DFC74400A4ED58 /* BookSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57AA929DFC74400A4ED58 /* BookSource.swift */; };
 		A7D57AB129E009AB00A4ED58 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D57AB029E009AB00A4ED58 /* Image.swift */; };
+		C32A00E35922C7E6C771B9AA /* Pods_KuComicsActivityExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3AF401005077961AE14032 /* Pods_KuComicsActivityExtension.framework */; };
 		E9F95D60D6D2D1D79933230C /* Pods_KuComics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A77F68082BA7E2AA00BB8AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7D57A6429DEAA1000A4ED58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77F67FC2BA7E2A800BB8AED;
+			remoteInfo = KuComicsActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7C680DD2B0F239000547695 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A77F680A2BA7E2AA00BB8AED /* KuComicsActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1EBCAFD6A0BF81FEB30D2D60 /* Pods-KuComicsActivityExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComicsActivityExtension.release.xcconfig"; path = "Target Support Files/Pods-KuComicsActivityExtension/Pods-KuComicsActivityExtension.release.xcconfig"; sourceTree = "<group>"; };
 		2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.debug.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.debug.xcconfig"; sourceTree = "<group>"; };
+		2D5455AB3FE583828188D166 /* Pods_KangBossActivityExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KangBossActivityExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComics.release.xcconfig"; path = "Target Support Files/Pods-KuComics/Pods-KuComics.release.xcconfig"; sourceTree = "<group>"; };
+		8E3AF401005077961AE14032 /* Pods_KuComicsActivityExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuComicsActivityExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A727A72D2A80EA5E00108D60 /* RESTFulAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTFulAPI.swift; sourceTree = "<group>"; };
 		A727A7322A83460300108D60 /* GithubSearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchPage.swift; sourceTree = "<group>"; };
 		A727A7342A83648C00108D60 /* RepListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepListPage.swift; sourceTree = "<group>"; };
+		A73B4C4C2BAA900F0015AB1A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A74DFB2F29E57CE700A818B8 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		A74DFB3129E581E000A818B8 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A74DFB3529E6CC8D00A818B8 /* KuAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuAlertView.swift; sourceTree = "<group>"; };
 		A7671C4029ECF8CC005BD3B4 /* BookShelfViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfViewModel.swift; sourceTree = "<group>"; };
 		A7671C4229ED247E005BD3B4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A7671C4429ED3F8D005BD3B4 /* BookSourceEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceEditPage.swift; sourceTree = "<group>"; };
+		A77F67FD2BA7E2A800BB8AED /* KuComicsActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KuComicsActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77F68012BA7E2A800BB8AED /* KuComicsActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuComicsActivityBundle.swift; sourceTree = "<group>"; };
+		A77F68032BA7E2A800BB8AED /* KuComicsActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuComicsActivity.swift; sourceTree = "<group>"; };
+		A77F68052BA7E2AA00BB8AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77F68072BA7E2AA00BB8AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77F681C2BA7E36F00BB8AED /* WidgetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
+		A77F681E2BA7E49000BB8AED /* ProductDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		A77F68202BA7E49000BB8AED /* CustomMultiTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMultiTarget.swift; sourceTree = "<group>"; };
+		A77F68212BA7E49000BB8AED /* KangBossAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KangBossAPI.swift; sourceTree = "<group>"; };
+		A77F68222BA7E49000BB8AED /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		A77F68232BA7E49000BB8AED /* NetWorkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Net\bWorkError.swift"; sourceTree = "<group>"; };
+		A77F68242BA7E49000BB8AED /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
+		A77F682D2BA7ED6200BB8AED /* DataSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSave.swift; sourceTree = "<group>"; };
 		A79141A729E39E1C00E8BDFF /* KuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuTabView.swift; sourceTree = "<group>"; };
 		A79141AA29E39FC700E8BDFF /* KuNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuNavigationBar.swift; sourceTree = "<group>"; };
 		A79141AD29E3A4F600E8BDFF /* BookShelfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfPage.swift; sourceTree = "<group>"; };
@@ -86,6 +144,8 @@
 		A7B9B93D29E42A5B001BA842 /* BookShelfTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfTypeCell.swift; sourceTree = "<group>"; };
 		A7B9B94029E43106001BA842 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		A7B9B94229E4325F001BA842 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		A7C680CE2B0F238D00547695 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A7C680D02B0F238D00547695 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A7C718BE29E8226200DFC021 /* BookSourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSourceViewModel.swift; sourceTree = "<group>"; };
 		A7D02BA829FA10E300D2EAD5 /* SudosuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudosuView.swift; sourceTree = "<group>"; };
 		A7D30C0729E4F4C100EED474 /* BookShelfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfService.swift; sourceTree = "<group>"; };
@@ -103,9 +163,22 @@
 		A7D57A8429DEE3A400A4ED58 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A7D57AA929DFC74400A4ED58 /* BookSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSource.swift; sourceTree = "<group>"; };
 		A7D57AB029E009AB00A4ED58 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B9065621216235CB5B0BF27D /* Pods-KangBossActivityExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KangBossActivityExtension.debug.xcconfig"; path = "Target Support Files/Pods-KangBossActivityExtension/Pods-KangBossActivityExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		D725405C32D6F67C6BB936B8 /* Pods-KangBossActivityExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KangBossActivityExtension.release.xcconfig"; path = "Target Support Files/Pods-KangBossActivityExtension/Pods-KangBossActivityExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D98D66CB6E8B3DECCB1DE051 /* Pods-KuComicsActivityExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuComicsActivityExtension.debug.xcconfig"; path = "Target Support Files/Pods-KuComicsActivityExtension/Pods-KuComicsActivityExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A77F67FA2BA7E2A800BB8AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77F67FF2BA7E2A800BB8AED /* SwiftUI.framework in Frameworks */,
+				A77F67FE2BA7E2A800BB8AED /* WidgetKit.framework in Frameworks */,
+				C32A00E35922C7E6C771B9AA /* Pods_KuComicsActivityExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7D57A6929DEAA1000A4ED58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,10 +223,45 @@
 			path = GithubSearch;
 			sourceTree = "<group>";
 		};
+		A77F68002BA7E2A800BB8AED /* KuComicsActivity */ = {
+			isa = PBXGroup;
+			children = (
+				A77F681F2BA7E49000BB8AED /* Model */,
+				A77F68252BA7E49000BB8AED /* NetWork */,
+				A77F681C2BA7E36F00BB8AED /* WidgetExtension.swift */,
+				A77F68012BA7E2A800BB8AED /* KuComicsActivityBundle.swift */,
+				A77F68032BA7E2A800BB8AED /* KuComicsActivity.swift */,
+				A77F68052BA7E2AA00BB8AED /* Assets.xcassets */,
+				A77F68072BA7E2AA00BB8AED /* Info.plist */,
+			);
+			path = KuComicsActivity;
+			sourceTree = "<group>";
+		};
+		A77F681F2BA7E49000BB8AED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A77F681E2BA7E49000BB8AED /* ProductDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A77F68252BA7E49000BB8AED /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A77F68202BA7E49000BB8AED /* CustomMultiTarget.swift */,
+				A77F68212BA7E49000BB8AED /* KangBossAPI.swift */,
+				A77F68222BA7E49000BB8AED /* NetWork.swift */,
+				A77F68232BA7E49000BB8AED /* NetWorkError.swift */,
+				A77F68242BA7E49000BB8AED /* RequestParameters.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		A79141A629E39ABE00E8BDFF /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				A7D30C4729E5533500EED474 /* BookSourceService.swift */,
+				A77F682D2BA7ED6200BB8AED /* DataSave.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -276,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D57A6E29DEAA1000A4ED58 /* KuComics */,
+				A77F68002BA7E2A800BB8AED /* KuComicsActivity */,
 				A7D57A6D29DEAA1000A4ED58 /* Products */,
 				CCC704BDA6DF090E6DE56C36 /* Pods */,
 				F40F710E2AA098F224CA33CF /* Frameworks */,
@@ -286,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D57A6C29DEAA1000A4ED58 /* KuComics.app */,
+				A77F67FD2BA7E2A800BB8AED /* KuComicsActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +411,7 @@
 				A79141A629E39ABE00E8BDFF /* Service */,
 				A7D57A8629DEEC8F00A4ED58 /* Model */,
 				A7D57AAD29E0092C00A4ED58 /* Page */,
+				A73B4C4C2BAA900F0015AB1A /* PrivacyInfo.xcprivacy */,
 			);
 			path = KuComics;
 			sourceTree = "<group>";
@@ -343,6 +454,10 @@
 			children = (
 				2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */,
 				802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */,
+				B9065621216235CB5B0BF27D /* Pods-KangBossActivityExtension.debug.xcconfig */,
+				D725405C32D6F67C6BB936B8 /* Pods-KangBossActivityExtension.release.xcconfig */,
+				D98D66CB6E8B3DECCB1DE051 /* Pods-KuComicsActivityExtension.debug.xcconfig */,
+				1EBCAFD6A0BF81FEB30D2D60 /* Pods-KuComicsActivityExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -351,6 +466,10 @@
 			isa = PBXGroup;
 			children = (
 				610DB1A70ECA82BD5299B8C8 /* Pods_KuComics.framework */,
+				A7C680CE2B0F238D00547695 /* WidgetKit.framework */,
+				A7C680D02B0F238D00547695 /* SwiftUI.framework */,
+				2D5455AB3FE583828188D166 /* Pods_KangBossActivityExtension.framework */,
+				8E3AF401005077961AE14032 /* Pods_KuComicsActivityExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,6 +477,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A77F67FC2BA7E2A800BB8AED /* KuComicsActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77F680B2BA7E2AA00BB8AED /* Build configuration list for PBXNativeTarget "KuComicsActivityExtension" */;
+			buildPhases = (
+				43690ED363EA6BB3B0E2C3B2 /* [CP] Check Pods Manifest.lock */,
+				A77F67F92BA7E2A800BB8AED /* Sources */,
+				A77F67FA2BA7E2A800BB8AED /* Frameworks */,
+				A77F67FB2BA7E2A800BB8AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KuComicsActivityExtension;
+			productName = KuComicsActivityExtension;
+			productReference = A77F67FD2BA7E2A800BB8AED /* KuComicsActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A7D57A6B29DEAA1000A4ED58 /* KuComics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7D57A7A29DEAA1300A4ED58 /* Build configuration list for PBXNativeTarget "KuComics" */;
@@ -367,10 +504,12 @@
 				A7D57A6929DEAA1000A4ED58 /* Frameworks */,
 				A7D57A6A29DEAA1000A4ED58 /* Resources */,
 				218C99F40E822684F884245D /* [CP] Embed Pods Frameworks */,
+				A7C680DD2B0F239000547695 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A77F68092BA7E2AA00BB8AED /* PBXTargetDependency */,
 			);
 			name = KuComics;
 			productName = KuComics;
@@ -384,9 +523,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					A77F67FC2BA7E2A800BB8AED = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					A7D57A6B29DEAA1000A4ED58 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -407,17 +549,28 @@
 			projectRoot = "";
 			targets = (
 				A7D57A6B29DEAA1000A4ED58 /* KuComics */,
+				A77F67FC2BA7E2A800BB8AED /* KuComicsActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A77F67FB2BA7E2A800BB8AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73B4C4E2BAA900F0015AB1A /* PrivacyInfo.xcprivacy in Resources */,
+				A77F68062BA7E2AA00BB8AED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7D57A6A29DEAA1000A4ED58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A7D57A7729DEAA1300A4ED58 /* Preview Assets.xcassets in Resources */,
 				A7B9B93229E3E803001BA842 /* Localizable.strings in Resources */,
+				A73B4C4D2BAA900F0015AB1A /* PrivacyInfo.xcprivacy in Resources */,
 				A7D57A7429DEAA1300A4ED58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +593,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KuComics/Pods-KuComics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43690ED363EA6BB3B0E2C3B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KuComicsActivityExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6312422716A2B67BA054E86 /* [CP] Check Pods Manifest.lock */ = {
@@ -467,6 +642,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A77F67F92BA7E2A800BB8AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77F68042BA7E2A800BB8AED /* KuComicsActivity.swift in Sources */,
+				A77F68272BA7E49000BB8AED /* CustomMultiTarget.swift in Sources */,
+				A77F682B2BA7E49000BB8AED /* RequestParameters.swift in Sources */,
+				A77F682A2BA7E49000BB8AED /* NetWorkError.swift in Sources */,
+				A77F68282BA7E49000BB8AED /* KangBossAPI.swift in Sources */,
+				A77F68022BA7E2A800BB8AED /* KuComicsActivityBundle.swift in Sources */,
+				A77F68262BA7E49000BB8AED /* ProductDetail.swift in Sources */,
+				A77F681D2BA7E36F00BB8AED /* WidgetExtension.swift in Sources */,
+				A77F68292BA7E49000BB8AED /* NetWork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7D57A6829DEAA1000A4ED58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,6 +688,7 @@
 				A7D57AAA29DFC74400A4ED58 /* BookSource.swift in Sources */,
 				A74DFB3629E6CC8D00A818B8 /* KuAlertView.swift in Sources */,
 				A79141AB29E39FC700E8BDFF /* KuNavigationBar.swift in Sources */,
+				A77F682E2BA7ED6200BB8AED /* DataSave.swift in Sources */,
 				A7D30C0A29E4F62000EED474 /* Book.swift in Sources */,
 				A7B9B92729E3B53C001BA842 /* BookShelfTabView.swift in Sources */,
 				A727A7352A83648C00108D60 /* RepListPage.swift in Sources */,
@@ -516,6 +708,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A77F68092BA7E2AA00BB8AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77F67FC2BA7E2A800BB8AED /* KuComicsActivityExtension */;
+			targetProxy = A77F68082BA7E2AA00BB8AED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A7B9B93429E3E803001BA842 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -529,6 +729,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A77F680C2BA7E2AA00BB8AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98D66CB6E8B3DECCB1DE051 /* Pods-KuComicsActivityExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J26596A9F4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuComicsActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KuComicsActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KuComics.KuComicsActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77F680D2BA7E2AA00BB8AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EBCAFD6A0BF81FEB30D2D60 /* Pods-KuComicsActivityExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J26596A9F4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuComicsActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KuComicsActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KuComics.KuComicsActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A7D57A7829DEAA1300A4ED58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -649,11 +916,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2599B907F1A17FDFCA43DB7F /* Pods-KuComics.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KuComics/Resource/Preview Content\"";
+				DEVELOPMENT_TEAM = J26596A9F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KuComics/Info.plist;
@@ -680,11 +949,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 802F7873A1A64505DE2681FE /* Pods-KuComics.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KuComics/Resource/Preview Content\"";
+				DEVELOPMENT_TEAM = J26596A9F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KuComics/Info.plist;
@@ -710,6 +981,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A77F680B2BA7E2AA00BB8AED /* Build configuration list for PBXNativeTarget "KuComicsActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77F680C2BA7E2AA00BB8AED /* Debug */,
+				A77F680D2BA7E2AA00BB8AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7D57A6729DEAA1000A4ED58 /* Build configuration list for PBXProject "KuComics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

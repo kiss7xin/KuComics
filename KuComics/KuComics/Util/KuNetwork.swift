@@ -67,6 +67,4 @@ class BaseNet {
             }
         }.resume()
     }
-    
-    
 }
